@@ -23,7 +23,7 @@
                     <div class="card2 card border-0 px-4 py-5">
                         <div class="row mb-4 px-3">
                             <h6 class="mb-0 mr-4 mt-2">Sign in with</h6>
-                            <div class="facebook text-center mr-3">
+                            <div class="facebook text-center mr-3 js-facebook-login">
                                 <i class="fab fa-facebook-f"></i>
                             </div>
                             <div class="twitter text-center mr-3">
@@ -60,16 +60,21 @@
             <div class="bg-blue py-4">
                 <div class="row px-3"> <small class="ml-4 ml-sm-5 mb-2">Copyright &copy; 2019. All rights
                         reserved.</small>
-                    <div class="social-contact ml-4 ml-sm-auto"> <span class="fab fa-facebook-f mr-4 text-sm"></span> <span
-                            class="fab fa-google-plus-g mr-4 text-sm"></span> <span
+                    <div class="social-contact ml-4 ml-sm-auto"> <span class="fab fa-facebook-f mr-4 text-sm"></span>
+                        <span class="fab fa-google-plus-g mr-4 text-sm"></span> <span
                             class="fab fa-linkedin-in mr-4 text-sm"></span> <span
                             class="fab fa-twitter mr-4 mr-sm-5 text-sm"></span> </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <script src="./assets/js/index.js"></script>
+    !-- Load the JS SDK asynchronously -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    
 </body>
 
 </html>
