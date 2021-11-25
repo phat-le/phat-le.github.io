@@ -41,10 +41,9 @@ function testAPI() {                      // Testing Graph API after login.  See
 
 function bindSocialLoginEvents() {
     $('.js-facebook-login').off('click').on('click', function() {
-        FB.login(function(response) {
-            // handle the response
-            console.log(response);
-          }, {scope: 'public_profile,email'});
+        window.location.href = `https://www.facebook.com/v12.0/dialog/oauth?
+            client_id=498406143881041
+            &redirect_uri=https://phat-le.github.io`
     });
 }
 
