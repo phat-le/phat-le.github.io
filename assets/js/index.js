@@ -41,7 +41,10 @@ function testAPI() {                      // Testing Graph API after login.  See
 
 function bindSocialLoginEvents() {
     $('.js-facebook-login').off('click').on('click', function() {
-        checkLoginState();
+        FB.login(function(response) {
+            // handle the response
+            console.log(response);
+          }, {scope: 'public_profile,email'});
     });
 }
 
